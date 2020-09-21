@@ -7,6 +7,7 @@ export default class Person {
   introduce() {
     return this.basicIntroduce();
   }
+
   basicIntroduce() {
     return `My name is ${this.name}. I am ${this.age} years old.`;
   }

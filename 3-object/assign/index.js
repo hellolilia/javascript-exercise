@@ -1,4 +1,5 @@
 export default function addSerialNumber(source) {
-  source.properties.status = 'processed';
+  const assign = Object.assign({}, source);
+  assign.properties.status = 'processed';
   return Object.assign({ serialNumber: '12345' }, source);
 }
