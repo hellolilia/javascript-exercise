@@ -3,9 +3,8 @@ function fetchData(url) {
   return fetch(url).then(response => {
     if (response.status === 200) {
       return response.json();
-    } else {
-      return Promise.reject('error msg');
     }
+    return Promise.reject(new Error('error'));
   });
   // end -->
 }

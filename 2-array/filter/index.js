@@ -3,9 +3,7 @@ function chooseMultiplesOfThree(collection) {
 }
 
 function chooseNoRepeatNumber(collection) {
-  return collection.filter((element, index, array) => {
-    return array.indexOf(element) === index;
-  });
+  return collection.filter((element, index, array) => array.indexOf(element) === index);
 }
 
 export { chooseMultiplesOfThree, chooseNoRepeatNumber };
